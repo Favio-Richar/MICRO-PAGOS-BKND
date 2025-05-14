@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Redirigiendo a Webpay...</title>
+</head>
+<body>
+  <h3>Redirigiendo a Webpay, por favor espera...</h3>
+
+  <form id="webpay-form" method="POST" action="https://webpay3gint.transbank.cl/webpayserver/initTransaction">
+    <input type="hidden" name="token_ws" value="01abf696dbbf1d6261ba485d93f6283140714af6d49f18db5d2aba495fdf2560">
+  </form>
+
+  <script>
+    document.getElementById('webpay-form').submit();
+  </script>
+</body>
+</html>
